@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 1vh;
+  width: 100%;
+  background: #051932;
+  background: linear-gradient(to bottom, #051932, #0d0555, 0.3);
+  font: 15px/1.4 "Poppins", sans-serif;
+}
+
+h1 {
+  color: #fff;
+  font-size: 1.6rem;
+  overflow-wrap: break-word;
+  margin-bottom: 0.35em;
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: rgba(41, 59, 82, 0.4);
+  backdrop-filter: blur(10px);
+  border: 0.5px solid #167bf7;
+  border-radius: 0.3125em;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 3.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4em;
+}
+
+input[type="text"] {
+  width: 90%;
+  height: 40px;
+  margin-top: 0.8em;
+  padding: 0 0.7em 0;
+  background: #f3f3f3;
+  color: #333;
+  border: 0.2em solid transparent;
+  border-radius: 0.5em;
+  transition: border 0.3s linear;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border: 0.2em solid #4ec5c1;
+}
+
+form button {
+  padding-left: 0.3em;
+  background: none;
+  border: none;
+  color: #4ec5c1;
+  font-size: 18px;
+  position: absolute;
+  transform: translateY(100%);
+}
+
+i {
+  color: #0073ff;
+  cursor: pointer;
+}
+
+span {
+   margin: 0 .5em 0 .5em;
+}
+
+li {
+   margin-bottom: .3em;
+}
+
+.listaTarefas {
+  display: block;
+  margin: 25px;
+  color: #fff;
+  max-width: 280px;
+  font-size: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.listaTarefas button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.listaTarefas input {
+  height: .8rem;
+  width: .8rem;
+  border-radius: 50%;
+  border: 0.1em solid #167bf7;
+  appearance: none;
+  cursor: pointer;
+}
+
+.listaTarefas input:checked {
+   background-size: 10px;
+   border: .2em solid #0073ff;
+   background-color: #0073ff;
+}
+
+.listaTarefas input:checked + span{
+   text-decoration: line-through .051em #fff;
+}
+
+.contadorPendentes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 2.5em;
+}
+
+.controleBtns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+#botaoConfirmar {
+  background-color: #167bf7;
+  color: #fff;
+  padding: 1em;
+  border-radius: 0.5em;
+  border: dashed transparent;
+  cursor: pointer;
+}
+
+#latinha:active {
+   transform: scale(1.4);
+}
+
+#botaoConfirmar:active {
+  transform: scale(0.96);
+}
+
+#botaoConfirmar:hover {
+  background-color: #172435;
+  border: dashed #167bf7;
+  transition: 0.2s linear;
+  cursor: pointer;
+}
